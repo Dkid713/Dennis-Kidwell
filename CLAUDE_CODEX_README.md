@@ -4,6 +4,15 @@
 
 Claude Codex is a comprehensive toolkit that leverages Claude's advanced language understanding to help with software development tasks including code generation, explanation, debugging, refactoring, and more.
 
+## 🎓 New! Beginner-Friendly Modes
+
+Perfect for people learning to code:
+- **🎓 Tutor Mode** (`claude-tutor`) - Learn programming step-by-step
+- **💬 Chat Mode** (`claude-chat`) - Interactive Replit-style coding assistant
+- **📚 Easy Start Guide** - See `EASY_START.md` for absolute beginners
+
+**Never coded before? Start here:** `bash start.sh`
+
 ## Features
 
 - **Code Generation**: Generate code from natural language descriptions

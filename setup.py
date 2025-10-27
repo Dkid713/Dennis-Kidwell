@@ -46,6 +46,8 @@ setup(
     entry_points={
         "console_scripts": [
             "claude-codex=claude_codex.cli:main",
+            "claude-chat=claude_codex.interactive:main",
+            "claude-tutor=claude_codex.tutor:main",
         ],
     },
     keywords="claude anthropic codex ai code-generation code-analysis llm",
