@@ -55,6 +55,7 @@ const conversations = [
 function App() {
   const [query, setQuery] = useState('')
   const [selectedModel, setSelectedModel] = useState('Smart (GPT-5)')
+  const models = ['Smart (GPT-5)', 'Creative (GPT-5)', 'Precise (GPT-4)']
 
   return (
     <div className="gradient-bg">
@@ -101,7 +102,13 @@ function App() {
               </div>
 
               {/* Model selector */}
-              <button className="model-selector text-white text-sm">
+              <button
+                className="model-selector text-white text-sm"
+                onClick={() => {
+                  const currentIndex = models.indexOf(selectedModel)
+                  setSelectedModel(models[(currentIndex + 1) % models.length])
+                }}
+              >
                 {selectedModel}
                 <ChevronDown size={14} />
               </button>
